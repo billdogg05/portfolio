@@ -1,23 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #823244;
-    --color-bg: #FFFFFF;
-    --color-surface: #F7F7F7;
-    --color-text: #1A1A1A;
-    --color-link-hover: #823244;
-    --color-heading: #000000;
+  --color-primary: #823244;
+  --color-bg: #FFFFFF;
+  --color-surface: #F7F7F7;
+  --color-text: #1A1A1A;
+  --color-link-hover: #823244;
+  --color-heading: #000000;
 
-    --font-sans: "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* shadow X:0 Y:4 Blur:4 */
+  --shadow-bottom: 0 4px 4px rgba(0, 0, 0, 0.25);
+  /* shadow X:0 Y:2 Blur:8 */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 :root.dark {
-    --color-primary: #E9BF70;
-    --color-bg: #0C0C0C;
-    --color-surface: #1D1D1F;
-    --color-text: #F7F7F7;
-    --color-link-hover: #E9BF70;
-    --color-heading: #FFFFFF;
+  --color-primary: #E9BF70;
+  --color-bg: #0C0C0C;
+  --color-surface: #1D1D1F;
+  --color-text: #F7F7F7;
+  --color-link-hover: #E9BF70;
+  --color-heading: #FFFFFF;
 }
 
 @layer base {
@@ -47,7 +52,22 @@
 }
 
 @layer components {
+  .my-container {
+    @apply max-w-[608px] w-full mx-auto px-4;
+  }
+
   .btn {
-    @apply pt-1 text-text font-semibold text-base border border-text rounded-sm flex items-center justify-center gap-3 w-full hover:border-primary hover:text-primary transition-colors duration-200 cursor-pointer;
+    @apply p-1 text-text font-medium text-base border border-text rounded-sm flex items-center justify-center gap-3 w-full hover:border-primary hover:text-primary transition-colors duration-200 cursor-pointer;
+  }
+  .btn img {
+    @apply w-4;
+  }
+
+  .cv-download {
+    @apply p-1 text-text font-medium text-base border border-primary rounded-sm flex items-center justify-center gap-3 w-full hover:border-text hover:text-primary transition-colors duration-200 cursor-pointer;
+  }
+
+  p.year {
+    @apply text-sm font-normal text-text;
   }
 }
