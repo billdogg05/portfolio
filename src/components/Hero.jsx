@@ -1,14 +1,14 @@
-import jobTitle from '../assets/icons/FRONT-END-DEVELOPER.svg'
+import JobTitle from '../assets/icons/FRONT-END-DEVELOPER.svg?react'
 import profile from '../assets/marvel.jpg'
-import telegramIcon from '../assets/icons/telegram.svg'
-import emailIcon from '../assets/icons/envelope.svg'
-import githubIcon from '../assets/icons/github.svg'
+import TelegramIcon from '../assets/icons/telegram.svg?react'
+import EmailIcon from '../assets/icons/envelope.svg?react'
+import GithubIcon from '../assets/icons/github.svg?react'
 
 function Hero() {
     return(
         <section className="py-20">
             <div className="my-container">
-                <img src={jobTitle} alt="Job Title" className='w-full' />
+                <JobTitle className='w-full text-[rgba(0, 0, 0, 0.1)] dark:text-[rgba(255, 255, 255, 0.1)]' />
                 <div className="grid grid-cols-[1fr_2fr] items-center gap-4 my-10">
                     <img src={profile} alt="Profile-pic" className="rounded-full" />
                     <div>
@@ -17,9 +17,9 @@ function Hero() {
                     </div>
                 </div>
                 <div className="grid grid-cols-3 gap-4">
-                    <a href="https://t.me/billdogg" className="btn" target="_blank" rel="noopener noreferrer"><img src={telegramIcon} alt="Telegram" />telegram</a>
-                    <a href="mailto:aminov.bun@gmail.com" className="btn"><img src={emailIcon} alt="Email" />email</a>
-                    <a href="https://github.com/billdogg05" className="btn" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="GitHub" />github</a>
+                    <a href="https://t.me/billdogg" className="btn" target="_blank" rel="noopener noreferrer"><TelegramIcon className="w-4" />telegram</a>
+                    <a href="mailto:aminov.bun@gmail.com" className="btn"><EmailIcon className="w-4" />email</a>
+                    <a href="https://github.com/billdogg05" className="btn" target="_blank" rel="noopener noreferrer"><GithubIcon className="w-4" />github</a>
                 </div>
             </div>
         </section>

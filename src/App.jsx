@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
+      <main>
+        <Hero />
+      </main>
       <Footer />
     </>
   )
