@@ -9,12 +9,12 @@
   --color-heading: #000000;
   --color-shadow: rgba(0, 0, 0, 0.25);
   --color-opacity-10: rgba(0, 0, 0, 0.1);
+  --color-white-bg: #FFFFFF;
 
   --font-sans: "Inter", system-ui, sans-serif;
 
-  /* shadow X:0 Y:4 Blur:4 */
+  /* shadow x y blur color */
   --shadow-bottom: 0 4px 4px var(--color-shadow);
-  /* shadow X:0 Y:2 Blur:8 */
   --shadow-card: 0 2px 8px var(--color-shadow);
   --shadow-inner: inset 0 0 4px var(--color-shadow);
 }
@@ -28,6 +28,7 @@
   --color-heading: #FFFFFF;
   --color-shadow: rgba(255, 255, 255, 0.2);
   --color-opacity-10: rgba(255, 255, 255, 0.1);
+  --color-white-bg: #000000;
 }
 
 @layer base {
@@ -62,18 +63,10 @@
 
 @layer components {
   .my-container {
-    @apply max-w-[608px] w-full mx-auto px-4;
+    @apply max-w-2xl w-full mx-auto px-4;
   }
 
   .btn {
     @apply p-1 text-text font-medium text-base border border-text rounded-sm flex items-center justify-center gap-3 w-full hover:border-primary hover:text-primary transition-colors duration-200 cursor-pointer;
-  }
-
-  .cv-download {
-    @apply p-1 text-text font-medium text-base border border-primary rounded-sm flex items-center justify-center gap-3 w-full hover:border-text hover:text-primary transition-colors duration-200 cursor-pointer;
-  }
-
-  p.year {
-    @apply text-sm font-normal text-text;
   }
 }
