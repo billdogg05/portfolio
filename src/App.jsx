@@ -7,7 +7,10 @@ function App() {
     <>
       <Header />
       <main>
-        <Hero />
+        <Hero id="projects" />
+        <Hero id="experience" />
+        <Hero id="education" />
+        <Hero id="skills" />
       </main>
       <Footer />
     </>

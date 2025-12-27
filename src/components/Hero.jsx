@@ -4,9 +4,9 @@ import TelegramIcon from '../assets/icons/telegram.svg?react'
 import EmailIcon from '../assets/icons/envelope.svg?react'
 import GithubIcon from '../assets/icons/github.svg?react'
 
-function Hero() {
+function Hero(props) {
     return(
-        <section className="py-20">
+        <section className="py-20" id={props.id}>
             <div className="my-container">
                 <JobTitle className='w-full text-[rgba(0, 0, 0, 0.1)] dark:text-[rgba(255, 255, 255, 0.1)]' />
                 <div className="grid grid-cols-[1fr_2fr] items-center gap-4 my-10">
