@@ -5,6 +5,7 @@ import ScrollBack from './components/ScrollBack'
 import WorkExperience from './components/WorkExperience'
 import DownloadCv from './components/DownloadCv'
 import Education from './components/Education'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <DownloadCv />
         </div>
         <Education id="education" />
-        <Hero id="skills" />
+        <Skills id="skills" />
         <ScrollBack />
       </main>
       <Footer />

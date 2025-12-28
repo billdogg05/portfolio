@@ -2,12 +2,14 @@ import { useEffect, useRef } from "react";
 
 function Header() {
     const navbar = useRef(null);
+    const header = useRef(null);
 
     useEffect(() => {
         if (!navbar.current) return;
+        if (!header.current) return;
 
         const navbarHeight = navbar.current.clientHeight;
-        document.documentElement.style.setProperty('--navbar-height', `${navbarHeight}px`);
+        header.current.style.setProperty('--navbar-height', `${navbarHeight}px`);
 
         window.addEventListener('scroll', () => {
             if (pageYOffset === 0) {
@@ -25,7 +27,7 @@ function Header() {
 
 
     return (
-        <header className="mt-[var(--navbar-height)]">
+        <header className="mt-(--navbar-height)" ref={header}>
             <nav className="bg-surface py-5 fixed top-0 right-0 left-0 z-50 duration-500 transition-[padding, box-shadow]" ref={navbar}>
                 <div className="my-container flex justify-between items-center">
                     <ul className="flex gap-8">

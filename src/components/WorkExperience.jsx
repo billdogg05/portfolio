@@ -2,7 +2,7 @@ import Work from './Work'
 
 function WorkExperience(props) {
     return (
-        <section className='py-20' id={props.id}>
+        <section className='spacing' id={props.id}>
             <div className="my-container">
                 <h2 className='mb-10'>Work Experience</h2>
                 <Work duration="05.2023 - 01.2025"
