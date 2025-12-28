@@ -17,6 +17,9 @@
   --shadow-bottom: 0 4px 4px var(--color-shadow);
   --shadow-card: 0 2px 8px var(--color-shadow);
   --shadow-inner: inset 0 0 4px var(--color-shadow);
+
+  --breakpoint-xs: 500px;
+  --breakpoint-2xs: 390px;
 }
 
 :root.dark {
@@ -41,11 +44,11 @@
   }
 
   h1, h2 {
-    @apply text-heading font-bold text-3xl;
+    @apply text-heading font-bold xs:text-3xl text-2xl;
   }
 
   h3 {
-    @apply text-heading font-semibold text-2xl;
+    @apply text-heading font-semibold xs:text-2xl text-xl;
   }
 
   h4 {
@@ -63,14 +66,18 @@
 
 @layer components {
   .my-container {
-    @apply max-w-2xl w-full mx-auto px-4;
+    @apply max-w-2xl w-full mx-auto xs:px-4 px-2;
   }
 
   .spacing {
-    @apply py-20;
+    @apply sm:py-20 xs:py-16 py-12;
   }
 
   .btn {
     @apply p-1 text-text font-medium text-base border border-text rounded-sm flex items-center justify-center gap-3 w-full hover:border-primary hover:text-primary transition-colors duration-200 cursor-pointer;
+  }
+
+  .under-heading {
+    @apply sm:mb-10 xs:mb-8 mb-6;
   }
 }

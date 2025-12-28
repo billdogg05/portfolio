@@ -25,25 +25,34 @@ import TailwindIcon from '../assets/skills/tailwind.svg?react'
 import VsCodeIcon from '../assets/skills/vs-code.svg?react'
 import VueIcon from '../assets/skills/vue.svg?react'
 import WordpressIcon from '../assets/skills/wordpress.svg?react'
+import AndroidStudioIcon from '../assets/skills/android-studio.svg?react'
+import CsharpIcon from '../assets/skills/c-sharp.svg?react'
+import IntellijIdiaIcon from '../assets/skills/intellij-idea.svg?react'
+import JqueryIcon from '../assets/skills/jquery.svg?react'
+import PhpIcon from '../assets/skills/php.svg?react'
+import PyCharmIcon from '../assets/skills/pycharm.svg?react'
+import SqlIcon from '../assets/skills/sql.svg?react'
+import TypeScriptIcon from '../assets/skills/typescript.svg?react'
+import WooCommerceIcon from '../assets/skills/woocommerce.svg?react'
 
 function Skills(props) {
     return (
         <section className='spacing' id={props.id}>
             <div className="my-container">
-                <h2 className='mb-10'>Skills</h2>
+                <h2 className='under-heading'>Skills</h2>
                 <SkillsGroup 
                     title="Professional Web Experience"
                     skills={[
                         {name: "WordPress", icon: <WordpressIcon className="h-6 text-text"/>},
                         {name: "WPBakery", icon: <GitHubIcon className="h-6 text-text"/>},
                         {name: "Elementor", icon: <ElementorIcon className="h-6 text-text"/>},
-                        {name: "WooCommerce", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "WooCommerce", icon: <WooCommerceIcon className="h-6 text-text"/>},
                         {name: "Gravity Forms", icon: <GitHubIcon className="h-6 text-text"/>},
                         {name: "Slider Revolution", icon: <GitHubIcon className="h-6 text-text"/>},
                         {name: "Imprezza", icon: <GitHubIcon className="h-6 text-text"/>},
                         {name: "Kanban flow", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "PHP", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "jQuery", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "PHP", icon: <PhpIcon className="h-6 text-text"/>},
+                        {name: "jQuery", icon: <JqueryIcon className="h-6 text-text"/>},
                         {name: "Bootstrap", icon: <BootstrapIcon className="h-6 text-text"/>},
                         {name: "SEO", icon: <GitHubIcon className="h-6 text-text"/>},
                     ]}
@@ -54,8 +63,8 @@ function Skills(props) {
                         {name: "Python", icon: <PythonIcon className="h-6 text-text"/>},
                         {name: "Kotlin", icon: <KotlinIcon className="h-6 text-text"/>},
                         {name: "Java", icon: <JavaIcon className="h-6 text-text"/>},
-                        {name: "C#", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "SQL", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "C#", icon: <CsharpIcon className="h-6 text-text"/>},
+                        {name: "SQL", icon: <SqlIcon className="h-6 text-text"/>},
                         {name: "OOP", icon: <JavaIcon className="h-6 text-text"/>},
                         {name: "Agile", icon: <GitHubIcon className="h-6 text-text"/>},
                         {name: "Rest API", icon: <RestApiIcon className="h-6 text-text"/>},
@@ -71,7 +80,7 @@ function Skills(props) {
                         {name: "HTML", icon: <HtmlIcon className="h-6 text-text"/>},
                         {name: "CSS", icon: <CssIcon className="h-6 text-text"/>},
                         {name: "JavaScript", icon: <JavaScriptIcon className="h-6 text-text"/>},
-                        {name: "TypeScript", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "TypeScript", icon: <TypeScriptIcon className="h-6 text-text"/>},
                         {name: "React", icon: <ReactIcon className="h-6 text-text"/>},
                         {name: "Vue", icon: <VueIcon className="h-6 text-text"/>},
                         {name: "Tailwind", icon: <TailwindIcon className="h-6 text-text"/>},
@@ -90,9 +99,9 @@ function Skills(props) {
                         {name: "Photoshop", icon: <PhotoshopIcon className="h-6 text-text"/>},
                         {name: "VS code", icon: <VsCodeIcon className="h-6 text-text"/>},
                         {name: "Visual Studio", icon: <VsCodeIcon className="h-6 text-text"/>},
-                        {name: "PyCharm", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "IntelliJ IDEA", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "Android Studio", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "PyCharm", icon: <PyCharmIcon className="h-6 text-text"/>},
+                        {name: "IntelliJ IDEA", icon: <IntellijIdiaIcon className="h-6 text-text"/>},
+                        {name: "Android Studio", icon: <AndroidStudioIcon className="h-6 text-text"/>},
                         {name: "SSMS", icon: <GitHubIcon className="h-6 text-text"/>},
                         {name: "Jupyter", icon: <GitHubIcon className="h-6 text-text"/>},
                         {name: "R-Studio", icon: <RstudioIcon className="h-6 text-text"/>},
@@ -106,9 +115,9 @@ function Skills(props) {
 
 function SkillsGroup(props) {
     return (
-        <div className="mb-10 last:mb-0">
+        <div className="under-heading last:mb-0">
             <h4 className="mb-3">{props.title}</h4>
-            <div className="grid grid-cols-6 gap-4">
+            <div className="grid sm:grid-cols-6 2xs:grid-cols-4 grid-cols-3 xs:gap-4 gap-2">
                 {props.skills.map((skill, index) => (
                     <Skill key={index} name={skill.name} icon={skill.icon} />
                 ))}
@@ -131,7 +140,7 @@ function Skill(props) {
     return (
         <div className="flex flex-col items-center justify-center gap-3 bg-surface rounded-lg h-(--card-height)" ref={card}>
             {props.icon}
-            <p className="text-primary font-normal text-[10px] text-center">{props.name}</p>
+            <p className="text-primary font-normal sm:text-[10px] text-xs max-xs:text-[10px] text-center">{props.name}</p>
         </div>
     )
 }

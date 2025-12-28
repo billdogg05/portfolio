@@ -3,8 +3,8 @@ import Work from './Work'
 function Education(props) {
     return (
         <section className='spacing' id={props.id}>
-            <div className="my-container">
-                <h2 className='mb-10'>Education</h2>
+            <div className="my-container [&>*:last-child_.subchild]:last:pb-0">
+                <h2 className='under-heading'>Education</h2>
                 <Work duration="06.2020 - 02.2021"
                     title="ProWeb"
                     link="https://proweb.uz/ru/courses/web-development/"

@@ -6,6 +6,7 @@ import WorkExperience from './components/WorkExperience'
 import DownloadCv from './components/DownloadCv'
 import Education from './components/Education'
 import Skills from './components/Skills'
+import Languages from './components/Languages'
 
 function App() {
   return (
@@ -13,13 +14,14 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Hero id="projects" />
+        {/* <Projects id="projects" /> */}
         <WorkExperience id="experience" />
         <div className="my-container">
           <DownloadCv />
         </div>
         <Education id="education" />
         <Skills id="skills" />
+        <Languages />
         <ScrollBack />
       </main>
       <Footer />

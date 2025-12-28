@@ -3,8 +3,8 @@ import Work from './Work'
 function WorkExperience(props) {
     return (
         <section className='spacing' id={props.id}>
-            <div className="my-container">
-                <h2 className='mb-10'>Work Experience</h2>
+            <div className="my-container [&>*:last-child_.subchild]:last:pb-0">
+                <h2 className='under-heading'>Work Experience</h2>
                 <Work duration="05.2023 - 01.2025"
                     title="Ara8 GmbH"
                     link="https://ara8.de/"

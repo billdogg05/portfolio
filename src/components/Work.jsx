@@ -25,12 +25,12 @@ function Work(props) {
                     />
                 ))}
             </div>
-            <div ref={content}>
-                <p className="text-sm font-normal text-text mb-2">{props.duration}</p>
+            <div className="sm:pb-15 pb-10 subchild" ref={content}>
+                <p className="text-sm font-normal text-text xs:mb-2 mb-0.5">{props.duration}</p>
                 <h3 className='flex items-center'>{props.title} <a href={props.link} target="_blank" rel="noopener noreferrer" className='ml-3 cursor-pointer hover:text-primary'><LinkIcon className="w-5" /></a></h3>
-                <h4 className="mb-4">{props.subtitle}</h4>
+                <h4 className="xs:mb-4 mb-3">{props.subtitle}</h4>
                 <p>{props.description}</p>
-                <ul className="list-disc pl-8 pb-15">
+                <ul className="list-disc xs:pl-8 pl-6 ">
                     {props.responsibilities.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
