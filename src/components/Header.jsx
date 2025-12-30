@@ -13,13 +13,11 @@ function Header() {
 
         window.addEventListener('scroll', () => {
             if (pageYOffset === 0) {
-                navbar.current.classList.remove('shadow-bottom');
-                navbar.current.classList.remove('py-3');
-                navbar.current.classList.add('py-5');
+                navbar.current.classList.remove('shadow-bottom', 'xs:py-3', 'py-2');
+                navbar.current.classList.add('xs:py-5', 'py-3');
             } else {
-                navbar.current.classList.add('shadow-bottom');
-                navbar.current.classList.add('py-3');
-                navbar.current.classList.remove('py-5');
+                navbar.current.classList.add('shadow-bottom', 'xs:py-3', 'py-2');
+                navbar.current.classList.remove('xs:py-5', 'py-3');
             }
         })
     })
@@ -28,7 +26,7 @@ function Header() {
 
     return (
         <header className="mt-(--navbar-height)" ref={header}>
-            <nav className="bg-surface py-5 fixed top-0 right-0 left-0 z-50 duration-500 transition-[padding, box-shadow]" ref={navbar}>
+            <nav className="bg-surface xs:py-5 py-3 fixed top-0 right-0 left-0 z-50 duration-500 transition-[padding, box-shadow]" ref={navbar}>
                 <div className="my-container flex justify-between items-center">
                     <ul className="flex gap-8">
                         {/* <li><a href="#projects" className="font-medium text-heading hover:text-primary">Projects</a></li> */}

@@ -37,7 +37,7 @@ import WooCommerceIcon from '../assets/skills/woocommerce.svg?react'
 
 function Skills(props) {
     return (
-        <section className='spacing' id={props.id}>
+        <section className='spacing scroll-mt-4' id={props.id}>
             <div className="my-container">
                 <h2 className='under-heading'>Skills</h2>
                 <SkillsGroup 
