@@ -3,7 +3,7 @@ import LinkIcon from '../assets/icons/link.svg?react';
 
 function Work(props) {
     const content = useRef(null);
-    const [lineCount, setLineCount] = useState([]);
+    const [lineCount, setLineCount] = useState(0);
 
     useEffect(() => {
         if (!content.current) return;
