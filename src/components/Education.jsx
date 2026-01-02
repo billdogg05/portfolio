@@ -1,53 +1,33 @@
 import Work from './Work'
+import { useTranslation } from "react-i18next"
 
 function Education(props) {
+    const { t } = useTranslation()
     return (
         <section className='spacing scroll-mt-4' id={props.id}>
             <div className="my-container [&>*:last-child_.subchild]:last:pb-0">
-                <h2 className='under-heading'>Education</h2>
-                <Work duration="06.2020 - 02.2021"
-                    title="ProWeb"
+                <h2 className='under-heading'>{t("education.title")}</h2>
+                <Work duration={t("education.institutions.institution1.duration")}
+                    title={t("education.institutions.institution1.name")}
                     link="https://proweb.uz/ru/courses/web-development/"
-                    subtitle="Web Development Course"
-                    description=""
-                    responsibilities={[
-                        <>completed the <span>9-month</span> course of web development</>,
-                        <>certificate ID: <span>1521</span></>,
-                        <>course duration: <span>72 lessons</span></>
-                    ]} />
-                <Work duration="01.2021 - 04.2021"
-                    title="Let’s Animate"
+                    subtitle={t("education.institutions.institution1.position")}
+                    description={t("education.institutions.institution1.description")}
+                    responsibilities={t("education.institutions.institution1.responsibilities", { returnObjects: true })}
+                    responsibilitiesPath="education.institutions.institution1.responsibilities" />
+                <Work duration={t("education.institutions.institution2.duration")}
+                    title={t("education.institutions.institution2.name")}
                     link="https://lets.uz/courses/predmets/"
-                    subtitle="Graphic Design Course"
-                    description=""
-                    responsibilities={[
-                        <>completed the <span>9-month</span> course of graphic design</>,
-                        <>certificate ID: <span>445</span></>,
-                        <>course duration: <span>24 lessons</span></>
-                    ]} />
-                <Work duration="2022 - 2026"
-                    title="Westminster International University in Tashkent"
+                    subtitle={t("education.institutions.institution2.position")}
+                    description={t("education.institutions.institution2.description")}
+                    responsibilities={t("education.institutions.institution2.responsibilities", { returnObjects: true })}
+                    responsibilitiesPath="education.institutions.institution2.responsibilities" />
+                <Work duration={t("education.institutions.institution3.duration")}
+                    title={t("education.institutions.institution3.name")}
                     link="https://www.wiut.uz/business-information-systems/"
-                    subtitle="BSc (Hons) in Business Information Systems"
-                    description="Related modules:"
-                    responsibilities={[
-                        <>Object Oriented Programming</>,
-                        <>Web Application Development</>,
-                        <>Mobile Applications Development</>,
-                        <>System Analysis and Design</>,
-                        <>Web Technology</>,
-                        <>Machine Learning</>,
-                        <>Computer Science Fundamentals</>,
-                        <>Database Systems Development</>,
-                        <>Software Quality, Performance and Testing</>,
-                        <>Network Operations</>,
-                        <>Distributed Systems and Cloud Computing</>,
-                        <>Fundamentals of Programming</>,
-                        <>Information Systems Management</>,
-                        <>Visual Programming</>,
-                        <>Graphic design</>,
-                        <>Project Management</>
-                    ]} />
+                    subtitle={t("education.institutions.institution3.position")}
+                    description={t("education.institutions.institution3.description")}
+                    responsibilities={t("education.institutions.institution3.responsibilities", { returnObjects: true })}
+                    responsibilitiesPath="education.institutions.institution3.responsibilities" />
             </div>
         </section>
     )

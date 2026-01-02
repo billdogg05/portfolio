@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import GitHubIcon from '../assets/icons/github.svg?react'
+import { useTranslation } from "react-i18next"
 
 // Icons
 import ApiIcon from '../assets/skills/api.svg?react'
@@ -36,12 +37,13 @@ import TypeScriptIcon from '../assets/skills/typescript.svg?react'
 import WooCommerceIcon from '../assets/skills/woocommerce.svg?react'
 
 function Skills(props) {
+    const { t } = useTranslation()
     return (
         <section className='spacing scroll-mt-4' id={props.id}>
             <div className="my-container">
-                <h2 className='under-heading'>Skills</h2>
+                <h2 className='under-heading'>{t("skills.title")}</h2>
                 <SkillsGroup 
-                    title="Professional Web Experience"
+                    title={t("skills.skillGroups.experience")}
                     skills={[
                         {name: "WordPress", icon: <WordpressIcon className="h-6 text-text"/>},
                         {name: "WPBakery", icon: <GitHubIcon className="h-6 text-text"/>},
@@ -58,7 +60,7 @@ function Skills(props) {
                     ]}
                 />
                 <SkillsGroup 
-                    title="Academic skills (WIUT)"
+                    title={t("skills.skillGroups.academic")}
                     skills={[
                         {name: "Python", icon: <PythonIcon className="h-6 text-text"/>},
                         {name: "Kotlin", icon: <KotlinIcon className="h-6 text-text"/>},
@@ -75,7 +77,7 @@ function Skills(props) {
                     ]}
                 />
                 <SkillsGroup 
-                    title="Web Development (ProWeb)"
+                    title={t("skills.skillGroups.training")}
                     skills={[
                         {name: "HTML", icon: <HtmlIcon className="h-6 text-text"/>},
                         {name: "CSS", icon: <CssIcon className="h-6 text-text"/>},
@@ -92,7 +94,7 @@ function Skills(props) {
                     ]}
                 />
                 <SkillsGroup 
-                    title="Design and Dev Tooling"
+                    title={t("skills.skillGroups.tooling")}
                     skills={[
                         {name: "Figma", icon: <FigmaIcon className="h-6 text-text"/>},
                         {name: "Illustrator", icon: <IllustratorIcon className="h-6 text-text"/>},

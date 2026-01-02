@@ -1,0 +1,115 @@
+{
+    "header": {
+        "projects": "Loyihalar",
+        "experience": "Tajriba",
+        "education": "Ta’lim",
+        "skills": "Ko‘nikmalar"
+    },
+    "hero": {
+        "greeting": "Bunyod Aminov",
+        "description": "Men <1>frontend dasturlashga</1> ixtisoslashganman va Python asoslari bo‘yicha mustahkam bilimga egaman. Keng qamrovli IT bilimlarim yangi vositalarga tez moslashishimga yordam beradi, shuningdek grafik dizayn sohasida yetarli tajribaga egaman.",
+        "location": "Toshkent, O‘zbekiston"
+    },
+    "projects": {
+        "title": "Loyihalar"
+    },
+    "experience": {
+        "title": "Ish tajribasi",
+        "companies": {
+            "company1": {
+                "duration": "May 2023 - Yanvar 2025",
+                "name": "Ara8 GmbH",
+                "position": "Front-End dasturchi",
+                "description": "",
+                "responsibilities": [
+                    "WPBakery va Elementor sahifa quruvchilari yordamida WordPress platformasida veb-saytlar ishlab chiqdim.",
+                    "WooCommerce, Gravity Forms va Slider Revolution kabi plaginlar, shuningdek Impreza mavzusi bilan ishladim va ularni tahlil qildim.",
+                    "jQuery, Bootstrap va PHP kodlarini moslashtirdim hamda veb-saytlar uchun SEO sozlash jarayonida ishtirok etdim.",
+                    "Vazifalarni Kanban Flow orqali boshqardim.",
+                    "Kompaniya bilan masofadan turib, frilanser sifatida ishladim."
+                ]
+            }
+        }
+    },
+    "education": {
+        "title": "Ta’lim",
+        "institutions": {
+            "institution1": {
+                "duration": "Iyun 2020 - Fevral 2021",
+                "name": "ProWeb",
+                "position": "Veb-dasturlash kursi",
+                "description": "",
+                "responsibilities": [
+                    "9 oylik veb-dasturlash kursini tamomladim",
+                    "Sertifikat ID: 1521",
+                    "Kurs davomiyligi: 72 ta dars"
+                ]
+            },
+            "institution2": {
+                "duration": "Yanvar 2021 - Aprel 2021",
+                "name": "Let’s Animate",
+                "position": "Grafik dizayn kursi",
+                "description": "",
+                "responsibilities": [
+                    "9 oylik grafik dizayn kursini tamomladim",
+                    "Sertifikat ID: 445",
+                    "Kurs davomiyligi: 24 ta dars"
+                ]
+            },
+            "institution3": {
+                "duration": "2022 - 2026",
+                "name": "Westminster International University in Tashkent",
+                "position": "Biznes axborot tizimlari bo‘yicha bakalavr (BSc, Hons)",
+                "description": "Tegishli fanlar:",
+                "responsibilities": [
+                    "Obyektga yo‘naltirilgan dasturlash",
+                    "Veb-ilovalar ishlab chiqish",
+                    "Mobil ilovalar ishlab chiqish",
+                    "Tizimlarni tahlil qilish va loyihalash",
+                    "Veb-texnologiyalar",
+                    "Mashinali o‘rganish",
+                    "Kompyuter fanlari asoslari",
+                    "Ma’lumotlar bazasi tizimlarini ishlab chiqish",
+                    "Dasturiy ta’minot sifati, unumdorligi va testlash",
+                    "Tarmoq operatsiyalari",
+                    "Taqsimlangan tizimlar va bulutli hisoblash",
+                    "Dasturlash asoslari",
+                    "Axborot tizimlarini boshqarish",
+                    "Vizual dasturlash",
+                    "Grafik dizayn",
+                    "Loyiha boshqaruvi"
+                ]
+            }
+        }
+    },
+    "skills": {
+        "title": "Ko‘nikmalar",
+        "skillGroups": {
+            "experience": "Professional veb-ish tajribasi",
+            "academic": "Akademik ko‘nikmalar (WIUT)",
+            "training": "Veb-dasturlash (ProWeb)",
+            "tooling": "Dizayn va dasturlash vositalari"
+        }
+    },
+    "languages": {
+        "title": "Tillar",
+        "languages": {
+            "language1": {
+                "name": "O‘zbek",
+                "level": "Ona tili"
+            },
+            "language2": {
+                "name": "Rus",
+                "level": "erkin (C2)"
+            },
+            "language3": {
+                "name": "Ingliz",
+                "level": "yaxshi (B2)"
+            }
+        }
+    },
+    "footer": {
+        "name": "Bunyod Aminov"
+    },
+    "downloadCV": "Rezyumeni yuklab olish"
+}

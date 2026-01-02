@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import LinkIcon from '../assets/icons/link.svg?react';
+import { Trans } from "react-i18next"
 
 function Work(props) {
     const content = useRef(null);
@@ -12,17 +13,14 @@ function Work(props) {
         const xTimes = Math.ceil((contentHeight - 12) / 16);
 
         setLineCount(xTimes)
-    }, [])
+    }, [])    
 
     return (
         <div className='grid grid-cols-[24px_1fr]'>
             <div className="flex flex-col items-center mr-4">
                 <div className="w-2 h-2 bg-heading rounded-full my-0.5"></div>
                 {Array.from({ length: lineCount }).map((_, index) => (
-                    <div
-                        key={index}
-                        className="w-0.5 h-3 bg-heading rounded-full my-0.5"
-                    />
+                    <div key={index} className="w-0.5 h-3 bg-heading rounded-full my-0.5" />
                 ))}
             </div>
             <div className="sm:pb-15 pb-10 subchild" ref={content}>
@@ -32,7 +30,11 @@ function Work(props) {
                 <p>{props.description}</p>
                 <ul className="list-disc xs:pl-8 pl-6 ">
                     {props.responsibilities.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <li key={index}>
+                            <Trans i18nKey={`${props.responsibilitiesPath}.${index}`} components={{ tech: <span /> }}>
+                                {item}
+                            </Trans>
+                        </li>
                     ))}
                 </ul>
             </div>

@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import BarsIcon from "../assets/icons/bars.svg?react";
 import CloseIcon from "../assets/icons/close.svg?react";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+    const { t } = useTranslation()
+
     const navbar = useRef(null);
     const header = useRef(null);
 
@@ -80,20 +83,34 @@ function Header() {
                         max-xs:flex-col max-xs:fixed max-xs:top-(--navbar-height) max-xs:right-0 max-xs:left-0
                         max-xs:bg-surface max-xs:px-2 max-xs:py-4
                         ${isMenuOpen ? 'max-xs:translate-x-0' : 'max-xs:-translate-x-full'}`}>
-                        {/* <li onClick={() => setIsMenuOpen(false)}><a href="#projects" className="font-medium text-heading hover:text-primary">Projects</a></li> */}
-                        <li onClick={() => setIsMenuOpen(false)}><a href="#experience" className="font-medium text-heading hover:text-primary">Experience</a></li>
-                        <li onClick={() => setIsMenuOpen(false)}><a href="#education" className="font-medium text-heading hover:text-primary">Education</a></li>
-                        <li onClick={() => setIsMenuOpen(false)}><a href="#skills" className="font-medium text-heading hover:text-primary">Skills</a></li>
+                        {/* <li onClick={() => setIsMenuOpen(false)}><a href="#projects" className="font-medium text-heading hover:text-primary">{t("header.Projects")}</a></li> */}
+                        <li onClick={() => setIsMenuOpen(false)}><a href="#experience" className="font-medium text-heading hover:text-primary focus:text-primary">{t("header.experience")}</a></li>
+                        <li onClick={() => setIsMenuOpen(false)}><a href="#education" className="font-medium text-heading hover:text-primary focus:text-primary">{t("header.education")}</a></li>
+                        <li onClick={() => setIsMenuOpen(false)}><a href="#skills" className="font-medium text-heading hover:text-primary focus:text-primary">{t("header.skills")}</a></li>
                     </ul>
-                    {/* <select name="language" id="language-select" className="focus:outline-none shadow-card bg-white-bg text-text font-medium text-sm py-1 px-2 rounded-sm cursor-pointer">
-                        <option value="en">EN</option>
-                        <option value="uz">UZ</option>
-                        <option value="ru">RU</option>
-                    </select> */}
+                    <LanguageSelector />
                 </div>
             </nav>
         </header>
     );
+}
+
+function LanguageSelector() {
+    const { i18n } = useTranslation();
+
+    function handleChange(e) {
+        const lang = e.target.value
+        i18n.changeLanguage(lang)
+        localStorage.setItem('lang', lang)
+    }
+
+    return (
+        <select name="language" value={i18n.language} onChange={handleChange} className="focus:outline-none shadow-card bg-white-bg text-text font-medium text-sm py-1 px-2 rounded-sm cursor-pointer">
+            <option value="en">EN</option>
+            <option value="uz">UZ</option>
+            <option value="ru">RU</option>
+        </select>
+    )
 }
 
 export default Header
