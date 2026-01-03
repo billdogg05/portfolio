@@ -7,7 +7,7 @@
     },
     "hero": {
         "greeting": "Бунёд Аминов",
-        "description": "Я специализируюсь на <1>фронтенд-разработке</1> и обладаю прочными знаниями основ Python. Имею широкий кругозор в сфере ИТ, что позволяет мне быстро адаптироваться к новым инструментам, а также солидный опыт в графическом дизайне.",
+        "description": "Я специализируюсь на <tech>frontend-разработке</tech> и имею глубокое понимание в области backend-разработки. Кроме того, у меня есть надежный опыт в графическом дизайне и знание их принципов. В настоящее время являюсь студентом последнего курса WIUT, мне {{age}} год.",
         "location": "Ташкент, Узбекистан"
     },
     "projects": {
@@ -22,10 +22,10 @@
                 "position": "Front-End разработчик",
                 "description": "",
                 "responsibilities": [
-                    "разрабатывал веб-сайты на платформе WordPress с использованием конструкторов страниц WPBakery и Elementor.",
-                    "работал с плагинами и анализировал их, включая WooCommerce, Gravity Forms и Slider Revolution, а также тему Impreza.",
-                    "кастомизировал код на jQuery, Bootstrap и PHP, а также участвовал в процессе SEO-настройки веб-сайтов.",
-                    "управлял задачами с использованием Kanban Flow.",
+                    "создавал веб-сайты на платформе <tech>WordPress</tech>  с помощью конструкторов <tech>WPBakery</tech> и <tech>Elementor</tech>.",
+                    "анализировал и работал с плагинами <tech>WooCommerce</tech>, <tech>Gravity Forms</tech> и <tech>Slider Revolution</tech>, а также с темой <tech>Impreza</tech>.",
+                    "настраивал код на <tech>jQuery</tech>, <tech>Bootstrap</tech> и <tech>PHP</tech>, а также участвовал в процессе <tech>SEO</tech>-настройки веб-сайтов.",
+                    "управлял задачами с использованием <tech>Kanban Flow</tech>.",
                     "работал с компанией удалённо на фриланс-основе."
                 ]
             }
@@ -40,9 +40,9 @@
                 "position": "Курс веб-разработки",
                 "description": "",
                 "responsibilities": [
-                    "завершил 9-месячный курс веб-разработки",
-                    "ID сертификата: 1521",
-                    "продолжительность курса: 72 занятия"
+                    "завершил <tech>9-месячный</tech> курс веб-разработки",
+                    "ID сертификата: <tech>1521</tech>",
+                    "продолжительность курса: <tech>72 занятия</tech>"
                 ]
             },
             "institution2": {
@@ -51,33 +51,33 @@
                 "position": "Курс графического дизайна",
                 "description": "",
                 "responsibilities": [
-                    "завершил 9-месячный курс графического дизайна",
-                    "ID сертификата: 445",
-                    "продолжительность курса: 24 занятия"
+                    "завершил <tech>3-месячный</tech> курс графического дизайна",
+                    "ID сертификата: <tech>445</tech>",
+                    "продолжительность курса: <tech>24 занятия</tech>"
                 ]
             },
             "institution3": {
-                "duration": "2022 - 2026",
+                "duration": "2022 - настоящее время",
                 "name": "Westminster International University in Tashkent",
-                "position": "Бакалавр (с отличием) по бизнес-информационным системам",
-                "description": "Связанные модули:",
+                "position": "BSc (Hons) in Business Information Systems",
+                "description": "Соответствующие предметы:",
                 "responsibilities": [
-                    "Объектно-ориентированное программирование",
-                    "Разработка веб-приложений",
-                    "Разработка мобильных приложений",
-                    "Системный анализ и проектирование",
-                    "Веб-технологии",
-                    "Машинное обучение",
-                    "Основы компьютерных наук",
-                    "Разработка баз данных",
-                    "Качество программного обеспечения, производительность и тестирование",
-                    "Сетевые операции",
-                    "Распределённые системы и облачные вычисления",
-                    "Основы программирования",
-                    "Управление информационными системами",
-                    "Визуальное программирование",
-                    "Графический дизайн",
-                    "Управление проектами"
+                    "Object Oriented Programming",
+                    "Web Application Development",
+                    "Mobile Applications Development",
+                    "System Analysis and Design",
+                    "Web Technology",
+                    "Machine Learning",
+                    "Computer Science Fundamentals",
+                    "Database Systems Development",
+                    "Software Quality, Performance and Testing",
+                    "Network Operations",
+                    "Distributed Systems and Cloud Computing",
+                    "Fundamentals of Programming",
+                    "Information Systems Management",
+                    "Visual Programming",
+                    "Graphic design",
+                    "Project Management"
                 ]
             }
         }
@@ -86,17 +86,17 @@
         "title": "Навыки",
         "skillGroups": {
             "experience": "Профессиональный опыт веб-разработки",
-            "academic": "Академические навыки (WIUT)",
+            "academic": "Академический (WIUT)",
             "training": "Веб-разработка (ProWeb)",
             "tooling": "Инструменты дизайна и разработки"
         }
     },
     "languages": {
-        "title": "Языки",
+        "title": "Владение языками",
         "languages": {
             "language1": {
                 "name": "Узбекский",
-                "level": "Родной"
+                "level": "родной"
             },
             "language2": {
                 "name": "Русский",
@@ -111,5 +111,5 @@
     "footer": {
         "name": "Бунёд Аминов"
     },
-    "downloadCV": "Скачать резюме"
+    "downloadCV": "Резюме"
 }

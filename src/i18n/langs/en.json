@@ -7,7 +7,7 @@
     },
     "hero": {
         "greeting": "Bunyod Aminov",
-        "description": "I specialise in <tech>frontend development</tech> and have a strong understanding of Python fundamentals. I have broad IT knowledge that allows me to adapt to new tools quickly, along with solid experience in graphic design.",
+        "description": "Yo, I specialise in <tech>frontend development</tech> and have a strong understanding of back-end development. Additionally, I have solid experience in graphic design and knowledge of its principles. Currently, I am a final-year student at WIUT and {{age}} years old.",
         "location": "Tashkent, Uzbekistan"
     },
     "projects": {
@@ -23,7 +23,7 @@
                 "description": "",
                 "responsibilities": [
                     "developed websites in the <tech>WordPress</tech> platform using <tech>WPBakery</tech> and <tech>Elementor</tech> page builders.",
-                    "worked with and analyzed plugins such as <tech>WooCommerce</tech>, <tech>Gravity Forms</tech>, and <tech>Slider Revolution</tech>, as well as the <tech>Impreza theme</tech>.",
+                    "worked with and analyzed plugins such as <tech>WooCommerce</tech>, <tech>Gravity Forms</tech>, and <tech>Slider Revolution</tech>, as well as the <tech>Impreza</tech> theme.",
                     "customised codes in <tech>jQuery</tech>, <tech>Bootstrap</tech>, and <tech>PHP</tech>, and participated in the <tech>SEO</tech> setup process for websites.",
                     "managed tasks through the <tech>Kanban Flow</tech>.",
                     "worked remotely with the company on a freelance basis."
@@ -37,7 +37,7 @@
             "institution1": {
                 "duration": "June 2020 - February 2021",
                 "name": "ProWeb",
-                "position": "Web Development Course",
+                "position": "Web Development course",
                 "description": "",
                 "responsibilities": [
                     "completed the <tech>9-month</tech> course of web development",
@@ -48,19 +48,19 @@
             "institution2": {
                 "duration": "January 2021 - April 2021",
                 "name": "Let’s Animate",
-                "position": "Graphic Design Course",
+                "position": "Graphic Design course",
                 "description": "",
                 "responsibilities": [
-                    "completed the <tech>9-month</tech> course of graphic design",
+                    "completed the <tech>3-month</tech> course of graphic design",
                     "certificate ID: <tech>445</tech>",
                     "course duration: <tech>24 lessons</tech>"
                 ]
             },
             "institution3": {
-                "duration": "2022 - 2026",
+                "duration": "2022 - present",
                 "name": "Westminster International University in Tashkent",
                 "position": "BSc (Hons) in Business Information Systems",
-                "description": "Related modules:",
+                "description": "Relevant modules:",
                 "responsibilities": [
                     "Object Oriented Programming",
                     "Web Application Development",
@@ -86,7 +86,7 @@
         "title": "Skills",
         "skillGroups": {
             "experience": "Professional Web Experience",
-            "academic": "Academic skills (WIUT)",
+            "academic": "Academic (WIUT)",
             "training": "Web Development (ProWeb)",
             "tooling": "Design and Dev Tooling"
         }
@@ -96,7 +96,7 @@
         "languages": {
             "language1": {
                 "name": "Uzbek",
-                "level": "Native"
+                "level": "native"
             },
             "language2": {
                 "name": "Russian",
@@ -111,5 +111,5 @@
     "footer": {
         "name": "Bunyod Aminov"
     },
-    "downloadCV": "Download CV"
+    "downloadCV": "Resume"
 }

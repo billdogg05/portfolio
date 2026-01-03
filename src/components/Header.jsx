@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import BarsIcon from "../assets/icons/bars.svg?react";
 import CloseIcon from "../assets/icons/close.svg?react";
+import GlobeIcon from "../assets/icons/globe.svg?react";
 import { useTranslation } from "react-i18next";
 
 function Header() {
@@ -105,11 +106,14 @@ function LanguageSelector() {
     }
 
     return (
-        <select name="language" value={i18n.language} onChange={handleChange} className="focus:outline-none shadow-card bg-white-bg text-text font-medium text-sm py-1 px-2 rounded-sm cursor-pointer">
-            <option value="en">EN</option>
-            <option value="uz">UZ</option>
-            <option value="ru">RU</option>
-        </select>
+        <div className="relative">
+            <select name="language" value={i18n.language} onChange={handleChange} className="appearance-none focus:outline-none bg-white-bg text-text font-medium text-sm py-1 pr-2 pl-8 rounded-sm cursor-pointer dark:border-black border border-primary">
+                <option value="en">EN</option>
+                <option value="uz">UZ</option>
+                <option value="ru">РУ</option>
+            </select>
+            <GlobeIcon className="w-4 text-primary absolute top-1/2 -translate-y-1/2 left-2 pointer-events-none" />
+        </div>
     )
 }
 

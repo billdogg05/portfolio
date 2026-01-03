@@ -5,6 +5,22 @@ import enLang from './langs/en.json';
 import uzLang from './langs/uz.json';
 import ruLang from './langs/ru.json';
 
+const supportedLanguages = ['en', 'ru', 'uz']
+
+function detectLanguage() {
+  const saved = localStorage.getItem('lang')
+  if (saved && supportedLanguages.includes(saved)) {
+    return saved
+  }
+
+  const systemLang = navigator.language?.split('-')[0]
+  if (supportedLanguages.includes(systemLang)) {
+    return systemLang
+  }
+
+  return 'en'
+}
+
 const resources = {
   en: {
     translation: enLang
@@ -22,10 +38,15 @@ i18n
   .init({
     resources,
     fallbackLng: "en",
-    lng: localStorage.getItem('lang') || 'en',
+    lng: detectLanguage(),
     interpolation: {
       escapeValue: false
     }
   });
 
-  export default i18n;
+i18n.on('languageChanged', (lng) => {
+  document.documentElement.lang = lng
+})
+document.documentElement.lang = i18n.language
+
+export default i18n;
