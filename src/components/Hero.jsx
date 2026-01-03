@@ -23,11 +23,11 @@ function Hero(props) {
                         <h1 className="xs:mb-4 mb-2">{t("hero.greeting")}</h1>
                         <p>
                             <Trans i18nKey="hero.description" values={{ age }} components={{ tech: <span /> }}>
-                                I specialise in <span>frontend development</span> and have a strong understanding of Python fundamentals. I have broad IT knowledge that allows me to adapt to new tools quickly, along with solid experience in graphic design.
+                                Yo, I specialise in <span>frontend development</span> and have a strong understanding of back-end development. Additionally, I have solid experience in graphic design and knowledge of its principles. Currently, I am a final-year student at WIUT and {age} years old.
                             </Trans>
                         </p>
                         <div className="flex justify-between items-center gap-y-2 gap-x-6 mt-6 xs:mt-4 flex-wrap">
-                            <a className="font-medium text-sm cursor-pointer flex gap-2 items-center border-b border-transparent hover:border-primary hover:text-primary" href="https://yandex.uz/maps/-/CLTfJCMd" target="_blank" rel="noopener noreferrer"><LocationIcon className="w-4 text-primary" />{t("hero.location")}</a>
+                            <p className="font-medium text-sm flex gap-2 items-center border-b border-transparent"><LocationIcon className="w-4 text-primary" />{t("hero.location")}</p>
                             <a className="font-medium text-sm cursor-pointer flex gap-2 items-center border-b border-transparent hover:border-primary hover:text-primary" href="tel:+998909795123"><PhoneIcon className="w-4 text-primary" />(90) 979 51 23</a>
                         </div>
                     </div>

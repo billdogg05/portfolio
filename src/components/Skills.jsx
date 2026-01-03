@@ -35,6 +35,18 @@ import PyCharmIcon from '../assets/skills/pycharm.svg?react'
 import SqlIcon from '../assets/skills/sql.svg?react'
 import TypeScriptIcon from '../assets/skills/typescript.svg?react'
 import WooCommerceIcon from '../assets/skills/woocommerce.svg?react'
+import DrawIoIcon from '../assets/skills/draw_io.svg?react'
+import GravityFormIcon from '../assets/skills/gravity_form.svg?react'
+import ImprezzaIcon from '../assets/skills/imprezza.svg?react'
+import JupyterIcon from '../assets/skills/jupyter.svg?react'
+import KanbanFlowIcon from '../assets/skills/kanban_flow.svg?react'
+import MsProjectIcon from '../assets/skills/ms_project.svg?react'
+import PugIcon from '../assets/skills/pug.svg?react'
+import SeoIcon from '../assets/skills/seo.svg?react'
+import SliderRevolutionIcon from '../assets/skills/slider_revolution.svg?react'
+import WPBakeryIcon from '../assets/skills/wp_bakery.svg?react'
+import XmlIcon from '../assets/skills/xml.svg?react'
+import AgileIcon from '../assets/skills/agile.svg?react'
 
 function Skills(props) {
     const { t } = useTranslation()
@@ -46,17 +58,17 @@ function Skills(props) {
                     title={t("skills.skillGroups.experience")}
                     skills={[
                         {name: "WordPress", icon: <WordpressIcon className="h-6 text-text"/>},
-                        {name: "WPBakery", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "WPBakery", icon: <WPBakeryIcon className="h-6 text-text"/>},
                         {name: "Elementor", icon: <ElementorIcon className="h-6 text-text"/>},
                         {name: "WooCommerce", icon: <WooCommerceIcon className="h-6 text-text"/>},
-                        {name: "Gravity Forms", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "Slider Revolution", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "Imprezza", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "Kanban flow", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "Gravity Forms", icon: <GravityFormIcon className="h-6 text-text"/>},
+                        {name: "Slider Revolution", icon: <SliderRevolutionIcon className="h-6 text-text"/>},
+                        {name: "Imprezza", icon: <ImprezzaIcon className="h-6 text-text"/>},
+                        {name: "Kanban flow", icon: <KanbanFlowIcon className="h-6 text-text"/>},
                         {name: "PHP", icon: <PhpIcon className="h-6 text-text"/>},
                         {name: "jQuery", icon: <JqueryIcon className="h-6 text-text"/>},
                         {name: "Bootstrap", icon: <BootstrapIcon className="h-6 text-text"/>},
-                        {name: "SEO", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "SEO", icon: <SeoIcon className="h-6 text-text"/>},
                     ]}
                 />
                 <SkillsGroup 
@@ -68,12 +80,12 @@ function Skills(props) {
                         {name: "C#", icon: <CsharpIcon className="h-6 text-text"/>},
                         {name: "SQL", icon: <SqlIcon className="h-6 text-text"/>},
                         {name: "OOP", icon: <JavaIcon className="h-6 text-text"/>},
-                        {name: "Agile", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "Agile", icon: <AgileIcon className="h-6 text-text"/>},
                         {name: "Rest API", icon: <RestApiIcon className="h-6 text-text"/>},
+                        {name: "Node.js", icon: <NodeJsIcon className="h-6 text-text"/>},
                         {name: "Firebase", icon: <FirebaseIcon className="h-6 text-text"/>},
-                        {name: "Draw io", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "XML", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "Pug", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "XML", icon: <XmlIcon className="h-6 text-text"/>},
+                        {name: "Pug", icon: <PugIcon className="h-6 text-text"/>},
                     ]}
                 />
                 <SkillsGroup 
@@ -81,6 +93,7 @@ function Skills(props) {
                     skills={[
                         {name: "HTML", icon: <HtmlIcon className="h-6 text-text"/>},
                         {name: "CSS", icon: <CssIcon className="h-6 text-text"/>},
+                        {name: "BEM", icon: <CssIcon className="h-6 text-text"/>},
                         {name: "JavaScript", icon: <JavaScriptIcon className="h-6 text-text"/>},
                         {name: "TypeScript", icon: <TypeScriptIcon className="h-6 text-text"/>},
                         {name: "React", icon: <ReactIcon className="h-6 text-text"/>},
@@ -90,7 +103,6 @@ function Skills(props) {
                         {name: "Git", icon: <GitIcon className="h-6 text-text"/>},
                         {name: "GitHub", icon: <GitHubIcon className="h-6 text-text"/>},
                         {name: "API", icon: <ApiIcon className="h-6 text-text"/>},
-                        {name: "Node.js", icon: <NodeJsIcon className="h-6 text-text"/>},
                     ]}
                 />
                 <SkillsGroup 
@@ -104,10 +116,10 @@ function Skills(props) {
                         {name: "PyCharm", icon: <PyCharmIcon className="h-6 text-text"/>},
                         {name: "IntelliJ IDEA", icon: <IntellijIdiaIcon className="h-6 text-text"/>},
                         {name: "Android Studio", icon: <AndroidStudioIcon className="h-6 text-text"/>},
-                        {name: "SSMS", icon: <GitHubIcon className="h-6 text-text"/>},
-                        {name: "Jupyter", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "Draw io", icon: <DrawIoIcon className="h-6 text-text"/>},
+                        {name: "Jupyter", icon: <JupyterIcon className="h-6 text-text"/>},
                         {name: "R-Studio", icon: <RstudioIcon className="h-6 text-text"/>},
-                        {name: "MS Project", icon: <GitHubIcon className="h-6 text-text"/>},
+                        {name: "MS Project", icon: <MsProjectIcon className="h-6 text-text"/>},
                     ]}
                 />
             </div>
