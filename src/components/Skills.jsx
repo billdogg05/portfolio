@@ -131,7 +131,7 @@ function SkillsGroup(props) {
     return (
         <div className="under-heading last:mb-0">
             <h4 className="mb-3">{props.title}</h4>
-            <div className="grid sm:grid-cols-6 2xs:grid-cols-4 grid-cols-3 xs:gap-4 gap-2">
+            <div className="grid 2sm:grid-cols-6 3xs:grid-cols-4 4xs:grid-cols-3 grid-cols-2 xs:gap-4 gap-2">
                 {props.skills.map((skill, index) => (
                     <Skill key={index} name={skill.name} icon={skill.icon} />
                 ))}

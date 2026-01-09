@@ -20,6 +20,11 @@
 
   --breakpoint-xs: 500px;
   --breakpoint-2xs: 390px;
+
+  /* breakpoints for skill section */
+  --breakpoint-2sm: 663px;
+  --breakpoint-3xs: 477px;
+  --breakpoint-4xs: 363px;
 }
 
 :root.dark {
@@ -59,6 +64,10 @@
     @apply text-text font-normal text-base;
   }
 
+  a {
+    @apply hover:text-primary;
+  }
+
   span {
     @apply text-primary font-medium;
   }
@@ -79,5 +88,24 @@
 
   .under-heading {
     @apply sm:mb-10 xs:mb-8 mb-6;
+  }
+
+  /* slider styles */
+  .swiper {
+    @apply !overflow-visible;
+  }
+
+  .swiper-slide {
+    @apply scale-[0.9] opacity-80 blur-[2px];
+  }
+  .swiper-slide-active {
+    @apply scale-none opacity-100 blur-none;
+  }
+
+  .swiper-pagination-bullet {
+    @apply w-5 h-1 rounded-full bg-shadow cursor-pointer;
+  }
+  .swiper-pagination-bullet-active {
+    @apply w-8 bg-text;
   }
 }

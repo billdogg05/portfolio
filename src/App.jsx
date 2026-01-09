@@ -7,6 +7,7 @@ import DownloadCv from './components/DownloadCv'
 import Education from './components/Education'
 import Skills from './components/Skills'
 import Languages from './components/Languages'
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        {/* <Projects id="projects" /> */}
+        <Projects id="projects" />
         <WorkExperience id="experience" />
         <div className="my-container">
           <DownloadCv />

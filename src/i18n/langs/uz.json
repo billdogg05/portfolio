@@ -7,7 +7,7 @@
     },
     "hero": {
         "greeting": "Bunyod Aminov",
-        "description": "Man <tech>frontend dasturlashga</tech> ixtisoslashganman va backend dasturlash bo‘yicha mustahkam bilimga egaman. Shuningdek, grafik dizayn sohasida yetarli tajribam va uning tamoyillari bo‘yicha bilimlarim mavjud. Hozirda WIUTda oxirgi kurs talabasi bo‘lib, yoshim {{age}} da.",
+        "description": "Men <tech>frontend dasturlashga</tech> ixtisoslashganman va backend dasturlash bo‘yicha mustahkam bilimga egaman. Shuningdek, grafik dizayn sohasida yetarli tajribam va uning tamoyillari bo‘yicha bilimlarim mavjud. Hozirda WIUTda oxirgi kurs talabasi bo‘lib, yoshim {{age}} da.",
         "location": "Toshkent, O‘zbekiston"
     },
     "projects": {

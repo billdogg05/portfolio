@@ -84,10 +84,10 @@ function Header() {
                         max-xs:flex-col max-xs:fixed max-xs:top-(--navbar-height) max-xs:right-0 max-xs:left-0
                         max-xs:bg-surface max-xs:px-2 max-xs:py-4
                         ${isMenuOpen ? 'max-xs:translate-x-0' : 'max-xs:-translate-x-full'}`}>
-                        {/* <li onClick={() => setIsMenuOpen(false)}><a href="#projects" className="font-medium text-heading hover:text-primary">{t("header.Projects")}</a></li> */}
-                        <li onClick={() => setIsMenuOpen(false)}><a href="#experience" className="font-medium text-heading hover:text-primary focus:text-primary">{t("header.experience")}</a></li>
-                        <li onClick={() => setIsMenuOpen(false)}><a href="#education" className="font-medium text-heading hover:text-primary focus:text-primary">{t("header.education")}</a></li>
-                        <li onClick={() => setIsMenuOpen(false)}><a href="#skills" className="font-medium text-heading hover:text-primary focus:text-primary">{t("header.skills")}</a></li>
+                        <li onClick={() => setIsMenuOpen(false)}><a href="#projects" className="font-medium text-heading hover:text-primary">{t("header.projects")}</a></li>
+                        <li onClick={() => setIsMenuOpen(false)}><a href="#experience" className="font-medium text-heading hover:text-primary">{t("header.experience")}</a></li>
+                        <li onClick={() => setIsMenuOpen(false)}><a href="#education" className="font-medium text-heading hover:text-primary">{t("header.education")}</a></li>
+                        <li onClick={() => setIsMenuOpen(false)}><a href="#skills" className="font-medium text-heading hover:text-primary">{t("header.skills")}</a></li>
                     </ul>
                     <LanguageSelector />
                 </div>
@@ -107,7 +107,7 @@ function LanguageSelector() {
 
     return (
         <div className="relative">
-            <select name="language" value={i18n.language} onChange={handleChange} className="appearance-none focus:outline-none bg-white-bg text-text font-medium text-sm py-1 pr-2 pl-8 rounded-sm cursor-pointer dark:border-black border border-primary">
+            <select name="language" value={i18n.language} onChange={handleChange} className="appearance-none focus:outline-none bg-white-bg text-text font-medium text-sm py-1 pr-2 pl-8 rounded-sm cursor-pointer border border-primary dark:border-black">
                 <option value="en">EN</option>
                 <option value="uz">UZ</option>
                 <option value="ru">РУ</option>

@@ -38,7 +38,7 @@ function ScrollBack() {
     }, [])
 
     return(
-        <div className="max-w-6xl w-full mx-auto px-4 fixed bottom-20 right-0 left-0 flex justify-end pointer-events-none">
+        <div className="max-w-6xl w-full mx-auto px-4 fixed bottom-20 right-0 left-0 flex justify-end pointer-events-none max-md:hidden z-10">
             <BackTop className="pointer-events-auto text-primary w-10 cursor-pointer shadow-card rounded-full translate-y-0 transition-transform duration-500 z-50 fill-white-bg hover:fill-primary hover:stroke-white"
             ref={backTop} />
         </div>
