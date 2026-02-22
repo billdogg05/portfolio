@@ -1,7 +1,7 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
-import ScrollBack from './components/ScrollBack'
+// import ScrollBack from './components/ScrollBack'
 import WorkExperience from './components/WorkExperience'
 import DownloadCv from './components/DownloadCv'
 import Education from './components/Education'
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Projects id="projects" />
+        {/* <Projects id="projects" /> */}
         <WorkExperience id="experience" />
         <div className="my-container">
           <DownloadCv />
@@ -23,7 +23,7 @@ function App() {
         <Education id="education" />
         <Skills id="skills" />
         <Languages />
-        <ScrollBack />
+        {/* <ScrollBack /> */}
       </main>
       <Footer />
     </>

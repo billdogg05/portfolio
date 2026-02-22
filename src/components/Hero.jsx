@@ -1,8 +1,8 @@
 import JobTitle from '../assets/icons/FRONT-END-DEVELOPER.svg?react'
-import profile from '../assets/marvel.jpg'
+import profile from '../assets/profile.webp'
 import TelegramIcon from '../assets/icons/telegram.svg?react'
 import EmailIcon from '../assets/icons/envelope.svg?react'
-import GithubIcon from '../assets/icons/github.svg?react'
+import LinkedInIcon from '../assets/icons/linkedin.svg?react'
 import PhoneIcon from '../assets/icons/call.svg?react'
 import LocationIcon from '../assets/icons/location.svg?react'
 import { Trans, useTranslation } from "react-i18next"
@@ -33,9 +33,9 @@ function Hero(props) {
                     </div>
                 </div>
                 <div className="grid 2xs:grid-cols-3 grid-cols-1 xs:gap-4 gap-2">
-                    <a href="https://t.me/billdogg" className="btn" target="_blank" rel="noopener noreferrer"><TelegramIcon className="w-4" />telegram</a>
-                    <a href="mailto:aminov.bun@gmail.com" className="btn"><EmailIcon className="w-4" />email</a>
-                    <a href="https://github.com/billdogg05" className="btn" target="_blank" rel="noopener noreferrer"><GithubIcon className="w-4" />github</a>
+                    <a href="https://t.me/billdogg" className="btn" target="_blank" rel="noopener noreferrer"><TelegramIcon className="h-4 w-auto" />telegram</a>
+                    <a href="mailto:aminov.bun@gmail.com" className="btn"><EmailIcon className="h-4 w-auto" />email</a>
+                    <a href="https://www.linkedin.com/in/bunyod-aminov-9753b22b0/" className="btn" target="_blank" rel="noopener noreferrer"><LinkedInIcon className="h-4 w-auto" />LinkedIn</a>
                 </div>
             </div>
         </section>

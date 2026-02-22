@@ -84,7 +84,7 @@ function Header() {
                         max-xs:flex-col max-xs:fixed max-xs:top-(--navbar-height) max-xs:right-0 max-xs:left-0
                         max-xs:bg-surface max-xs:px-2 max-xs:py-4
                         ${isMenuOpen ? 'max-xs:translate-x-0' : 'max-xs:-translate-x-full'}`}>
-                        <li onClick={() => setIsMenuOpen(false)}><a href="#projects" className="font-medium text-heading hover:text-primary">{t("header.projects")}</a></li>
+                        {/* <li onClick={() => setIsMenuOpen(false)}><a href="#projects" className="font-medium text-heading hover:text-primary">{t("header.projects")}</a></li> */}
                         <li onClick={() => setIsMenuOpen(false)}><a href="#experience" className="font-medium text-heading hover:text-primary">{t("header.experience")}</a></li>
                         <li onClick={() => setIsMenuOpen(false)}><a href="#education" className="font-medium text-heading hover:text-primary">{t("header.education")}</a></li>
                         <li onClick={() => setIsMenuOpen(false)}><a href="#skills" className="font-medium text-heading hover:text-primary">{t("header.skills")}</a></li>

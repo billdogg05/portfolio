@@ -37,6 +37,20 @@
   --color-shadow: rgba(255, 255, 255, 0.2);
   --color-opacity-10: rgba(255, 255, 255, 0.1);
   --color-white-bg: #000000;
+
+  @keyframes reflectionMove {
+    0% {
+      top: -40%;
+    }
+    50% {
+      top: 100%;
+    }
+    100% {
+      top: -40%;
+    }
+  }
+
+  --animate-reflection: reflectionMove 1.6s ease-in-out infinite;
 }
 
 @layer base {
